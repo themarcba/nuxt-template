@@ -13,6 +13,8 @@ Furthermore, some basic components are already included as well:
 - Rounded corner box
 - Icons
 
+Check out the [live demo](https://nuxt-starter-template.netlify.app).
+
 I have no documentation of those elements yet, but you can check out the [demo](/pages/demo.vue) page, where the elements are included.
 
 I also made an [example page](/pages/jokes.vue) on how to consume a REST API (thanks [FrancescoXX](https://github.com/FrancescoXX) for the suggestion!)
@@ -35,6 +37,7 @@ $ yarn generate
 ```
 
 ## FontAwesome
-If you want to use FontAwesome, you have to add your FontAwesome NPM Auth Token to the `.env` file. Copy the  [dotenv-example file](/dotenv-example) and paste your key in there.
+
+If you want to use FontAwesome, you have to add your FontAwesome NPM Auth Token to the `.env` file. Copy the [dotenv-example file](/dotenv-example) and paste your key in there.
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

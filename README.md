@@ -34,4 +34,7 @@ $ yarn start
 $ yarn generate
 ```
 
+## FontAwesome
+If you want to use FontAwesome, you have to add your FontAwesome NPM Auth Token to the `.env` file. Copy the  [dotenv-example file](/dotenv-example) and paste your key in there.
+
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

@@ -38,29 +38,54 @@ export default {
     isAnchor() {
       return Boolean(this.href)
     },
-    elementColor() {
-      if (this.success) return 'success'
-      if (this.danger) return 'danger'
-      if (this.warning) return 'warning'
-      if (this.info) return 'info'
-      else return 'accent'
+
+    colorSpecificClasses() {
+      if (this.success) {
+        return [
+          'text-success',
+          this.inverted ? 'hover:border-success' : 'border-success',
+        ]
+      }
+      if (this.danger) {
+        return [
+          'text-danger',
+          this.inverted ? 'hover:border-danger' : 'border-danger',
+        ]
+      }
+      if (this.warning) {
+        return [
+          'text-warning',
+          this.inverted ? 'hover:border-warning' : 'border-warning',
+        ]
+      }
+      if (this.info) {
+        return [
+          'text-info',
+          this.inverted ? 'hover:border-info' : 'border-info',
+        ]
+      } else {
+        return [
+          'text-accent',
+          this.inverted ? 'hover:border-accent' : 'border-accent',
+        ]
+      }
     },
 
     elementClass() {
-      const color = this.elementColor
       const classes = [
-        `inline-block`,
-        `font-bold`,
-        `text-${color}`,
-        `border-b-2`,
-        `transition-border`,
-        `duration-300`,
-        `ease-linear`,
+        ...this.colorSpecificClasses,
+        'inline-block',
+        'font-bold',
+        'border-b-2',
+        'transition-border',
+        'duration-300',
+        'ease-linear',
       ]
-      if (this.boxed) classes.push(`my-2`, `mx-4`)
-      if (this.inverted)
-        classes.push(`border-transparent`, `hover:border-${color}`)
-      else classes.push(`border-${color}`, `hover:border-transparent`)
+
+      if (this.inverted) classes.push('border-transparent')
+      else classes.push('hover:border-transparent')
+
+      if (this.boxed) classes.push('my-2', 'mx-4')
       return classes
     },
   },

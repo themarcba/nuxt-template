@@ -38,12 +38,34 @@ export default {
     isAnchor() {
       return Boolean(this.href)
     },
-    elementColor() {
-      if (this.success) return 'success'
-      if (this.danger) return 'danger'
-      if (this.warning) return 'warning'
-      if (this.info) return 'info'
-      else return 'accent'
+    colorSpecificClasses() {
+      let classes = []
+      if (this.secondary) {
+        if (this.success) {
+          classes = ['text-success', 'border-success', 'hover:bg-success']
+        } else if (this.danger) {
+          classes = ['text-danger', 'border-danger', 'hover:bg-danger']
+        } else if (this.warning) {
+          classes = ['text-warning', 'border-warning', 'hover:bg-warning']
+        } else if (this.info) {
+          classes = ['text-info', 'border-info', 'hover:bg-info']
+        } else {
+          classes = ['text-accent', 'border-accent', 'hover:bg-accent']
+        }
+      } else if (!this.secondary) {
+        if (this.success) {
+          classes = ['border-success', 'bg-success', 'hover:text-success']
+        } else if (this.danger) {
+          classes = ['border-danger', 'bg-danger', 'hover:text-danger']
+        } else if (this.warning) {
+          classes = ['border-warning', 'bg-warning', 'hover:text-warning']
+        } else if (this.info) {
+          classes = ['border-info', 'bg-info', 'hover:text-info']
+        } else {
+          classes = ['border-accent', 'bg-accent', 'hover:text-accent']
+        }
+      }
+      return classes
     },
     elementClass() {
       const shared = [
@@ -58,24 +80,18 @@ export default {
         'ease-linear',
         'inline-block',
       ]
-      const color = this.elementColor
       if (this.secondary) {
         return [
           ...shared,
-          `text-${color}`,
-          `border-${color}`,
-          `bg-transparent`,
-          `hover:bg-${color}`,
-          `hover:text-accentContrast`,
+          ...this.colorSpecificClasses,
+          'hover:text-accentContrast',
         ]
       } else {
         return [
           ...shared,
-          `border-${color}`,
-          `bg-${color}`,
-          `text-accentContrast`,
-          `hover:bg-transparent`,
-          `hover:text-${color}`,
+          ...this.colorSpecificClasses,
+          'hover:bg-transparent',
+          'text-accentContrast',
         ]
       }
     },

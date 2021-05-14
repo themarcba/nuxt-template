@@ -40,7 +40,7 @@ module.exports = {
       },
     },
     variants: {
-      scale: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
+      background: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
     },
   },
 }

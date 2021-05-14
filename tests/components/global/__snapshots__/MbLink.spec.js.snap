@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MbLink.vue matches the snapshot 1`] = `<button class="text-accent border-accent inline-block font-bold border-b-2 transition-border duration-300 ease-linear hover:border-transparent"></button>`;
+
+exports[`MbLink.vue matches the snapshot 2`] = `<button class="text-accent border-accent inline-block font-bold border-b-2 transition-border duration-300 ease-linear hover:border-transparent my-2 mx-4"></button>`;
+
+exports[`MbLink.vue matches the snapshot 3`] = `<button class="text-accent hover:border-accent inline-block font-bold border-b-2 transition-border duration-300 ease-linear border-transparent my-2 mx-4"></button>`;
+
+exports[`MbLink.vue matches the snapshot 4`] = `<button class="text-success hover:border-success inline-block font-bold border-b-2 transition-border duration-300 ease-linear border-transparent my-2 mx-4"></button>`;
+
+exports[`MbLink.vue matches the snapshot 5`] = `<button class="text-danger hover:border-danger inline-block font-bold border-b-2 transition-border duration-300 ease-linear border-transparent my-2 mx-4"></button>`;
+
+exports[`MbLink.vue matches the snapshot 6`] = `<button class="text-warning hover:border-warning inline-block font-bold border-b-2 transition-border duration-300 ease-linear border-transparent my-2 mx-4"></button>`;
+
+exports[`MbLink.vue matches the snapshot 7`] = `<button class="text-info hover:border-info inline-block font-bold border-b-2 transition-border duration-300 ease-linear border-transparent my-2 mx-4"></button>`;
+
+exports[`MbLink.vue matches the snapshot 8`] = `<a href="https://google.com" class="text-info hover:border-info inline-block font-bold border-b-2 transition-border duration-300 ease-linear border-transparent my-2 mx-4"></a>`;
+
+exports[`MbLink.vue matches the snapshot 9`] = `<a class="text-info hover:border-info inline-block font-bold border-b-2 transition-border duration-300 ease-linear border-transparent my-2 mx-4"></a>`;

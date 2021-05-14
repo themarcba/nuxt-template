@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer.vue matches the snapshot 1`] = `
+<footer class="text-secondary text-center py-3">
+  Made with <div icon="heart" type="solid"></div> by
+  <div href="https://twitter.com/themarcba" inverted="">Marc Backes</div>
+</footer>
+`;

@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MbIcon.vue matches the snapshot 1`] = `<div icon="far,calendar"></div>`;
+
+exports[`MbIcon.vue matches the snapshot 2`] = `<div icon="fas,calendar"></div>`;
+
+exports[`MbIcon.vue matches the snapshot 3`] = `<div icon="fab,calendar"></div>`;

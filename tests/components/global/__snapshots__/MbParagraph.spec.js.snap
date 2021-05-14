@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MbParagraph.vue matches the snapshot 1`] = `<p class="my-4 text-primary"></p>`;
+
+exports[`MbParagraph.vue matches the snapshot 2`] = `<p class="my-4 text-secondary"></p>`;

@@ -15,6 +15,8 @@ Furthermore, some basic components are already included as well:
 
 I have no documentation of those elements yet, but you can check out the [demo](/pages/demo.vue) page, where the elements are included.
 
+I also made an [example page](/pages/jokes.vue) on how to consume a REST API (thanks [FrancescoXX](https://github.com/FrancescoXX) for the suggestion!)
+
 ## Build Setup
 
 ```bash

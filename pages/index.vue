@@ -10,7 +10,11 @@
         Everything with some predefined components for the most important tasks.
       </mb-paragraph>
       <mb-button :to="{ name: 'demo' }">
-        Check out the demo <mb-icon icon="chevron-right" type="solid" />
+        Check out the component demo
+        <mb-icon icon="chevron-right" type="solid" />
+      </mb-button>
+      <mb-button :to="{ name: 'jokes' }">
+        Check out an API example <mb-icon icon="chevron-right" type="solid" />
       </mb-button>
       <mb-link href="https://github.com/themarcba/nuxt-template" boxed inverted>
         Check out the repository

@@ -22,7 +22,7 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     bodyAttrs: {
       class: [
-        'font-sans bg-surface transition-colors duration-300 ease-in-out',
+        'font-sans bg-surface transition-colors duration-300 ease-in-out m-4',
       ],
     },
   },

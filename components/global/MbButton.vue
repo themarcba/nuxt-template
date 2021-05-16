@@ -69,6 +69,7 @@ export default {
     },
     elementClass() {
       const shared = [
+        'mx-1',
         'rounded-md',
         'py-2',
         'px-4',

@@ -42,6 +42,7 @@ export default {
     '@nuxtjs/tailwindcss',
     '@nuxtjs/google-fonts',
     '@nuxtjs/fontawesome',
+    'nuxt-vite',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
